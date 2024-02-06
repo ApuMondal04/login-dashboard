@@ -83,15 +83,9 @@ class Dashboard extends CI_Controller {
         }
     }
     
-    
-    
-
-public function delete($userId) {
-  
+public function delete($userId) {  
     $this->load->model('user_model');
-
     $this->user_model->deleteUser($userId);
-
     redirect('employee');
 }
 
